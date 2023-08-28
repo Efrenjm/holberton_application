@@ -1,0 +1,64 @@
+:root{
+
+/* second palette */
+    /* --palette-brown :  #7c4c35;
+    --palette-sand : #cda784;
+    --palette-green : #778b40;
+    --palette-soft-blue : #aec2c9;
+    --palette-blue : #3d495a; */
+
+
+    /* third palette */
+    --aqua-color: #47A992;
+    --brown-color: #482121;
+    --red-color: #7A3E3E;
+    --white-color: #EEEEEE;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+
+header{
+    background-color: var(--brown-color);
+    color: var(--white-color);
+    padding-left: 30px;
+}
+.headMenu{
+    /* display: flex; */
+
+    /* background-color: #47A992; */
+}
+.option>a{
+    color: var(--white-color);
+}
+
+
+main{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    overflow-y: auto;
+    /* margin: 20px; */
+}
+article{
+    flex: 2;
+    overflow-y: auto;
+    /* background-color: var(---color); */
+    /* color: white; */
+    /* background-color: ; */
+}
+aside{
+    flex: 1;
+    overflow-y: auto;
+    background-color: var(--white-color);
+
+}
+footer{
+    color: var(--white-color);
+    background-color: var(--red-color);
+}
+footer a{
+    color: var(--white-color);
+}
