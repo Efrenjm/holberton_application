@@ -9,51 +9,96 @@
     <script src="behavior.js"></script>
 </head>
 <body class="works_on_smartphone">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v17.0" nonce="18j0uxyN"></script>
+
     <header>
+        <div class="right">
+            <div class="fb-share-button" data-href="http://13.36.229.181/" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F13.36.229.181%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartir</a></div>
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
         <ul class="headMenu">
-            <li class="logo">&#10051;</li>
-            <li class="option"><a href="#" id="home">Inicio</a></li>
+            <li class="logo option"><a href="/">&#10051;</a></li>
+            <li class="option"><a href="#" id="home">Home</a></li>
             <li class="option"><a href="./tweets.html" id="tweets">Tweets</a></li>
             <!-- <li class="option"><a href="http://">hola</a></li> -->
         </ul>
+
     </header>
     <main>
         <article>
-            <!-- at least 4 paragraphs;
-                headings (titles) of level 1, 2 and 3, which are represented by <h1>, <h2> and <h3> tags;
-                a clickable image of your choice (you can use the https://apply.holbertonschool.com/holberton-logo.png 
-                image, or another one you find on the internet by using its full URL); and it may link to any URL 
-                online that you want. -->
             <h1>Holberton Application</h1>
                 <p>
-                    This is the application for Holberton By Efrén Jiménez
+                    This website is the last section of the second challenge to apply for the Holberton School is the application for Holberton School. 
+                    It's made in plain HTML, CSS and Javascript without any other framework or library.
                 </p>
-            <h2>title 2</h2>
 
-            <br><br><br><br><br><br>
-            <h3>Social</h3>
-            <p>Follow me on Twitter:</p>
-            <p>
-                You can find me on <a href="https://www.kaggle.com/efrenjimnez">Kaggle</a>, 
-                <a href="https://github.com/Efrenjm">GitHub</a> and <a href="https://www.linkedin.com/in/efren-jimenez/">LinkedIn</a>.
-            </p>
-            <br><br><br><br><br><br>
-            <!-- <img src="" alt=""> -->
-            <p>hola</p>
-            <br><br><br><br><br><br>
-            <p>mundo</p>
-            <br><br><br><br><br><br>
-            <p>hole</p>
-            <p></p>
+                <h2>About me</h2>
+                    <div id="aboutMe" class="content">
+                        <img src="./images/profile_picture.png" alt="profile picture">
+                        <p>
+                            I'm a very enthusiastic person who's really passionate about programming. I have some experience making static websites and
+                            I'm currently learning about <em>React</em> and <em>NodeJs</em> by myself.
+                            <br>
+                            Also, I study <em>Physics Engineering</em>, I'm on my last semester and as part of the syllabus I learnt about <em>machine learning</em> and <em>computer vision</em>.
+                            <br>
+                            I also really like <em>otters</em>, my profile picture in some social media is an NFT that I earned for free with Binance Bicasso. It is listed in <a href="https://www.binance.com/en/nft/item/71139595">Bixel</a>.
+                        </p>
+                    </div>
+
+                <h2>Previous work</h2>
+                    <h3>Pinterest</h3>
+                        <div id="pinterestInterface" class="content">
+                            <p>
+                                This project is a copy of the <a href="https://github.com/Efrenjm/Pinterest">Pinterest interface</a>.
+                                As it is only made with html and css it was not possible to integrate the real layout commonly named <em>masonry</em>,
+                                where the images have different heights, but it is pretty similar on all the other behavior.
+                                <br>
+                                It's possible to have something similar to a previsualization with <a href="https://efrenjm.github.io/Pinterest/">GitHub Pages</a> but, as this platform
+                                only allows static websites and this website implements media queries it wont be possible to look the real behavior.
+                            </p>
+                            <img src="./images/Pinterest_interface.png" alt="pinterest">
+                        </div>
+
+                    <h3>Bank website</h3>
+                        <div id="bankWebsite" class="content">
+                            <img src="./images/bank_page.png" alt="bank page">
+                            <p>
+                                This project has the intention to be a bank website. It has a landing page, a login page and the balance page.
+                                It is not connected to a database, the users and passwords can be found in the source code or in the <a href="https://github.com/Efrenjm/ATM_machine">repository</a>. 
+                                On this case, it is possible to visualize it with <a href="https://efrenjm.github.io/ATM_machine/">GitHub Pages</a>, if you want to try you can login with 
+                                user: <em>maui@correo.com</em>, and password: <em>pass</em>.
+                            </p>
+                        </div>
+                    
+                <h2>Social</h2>
+                    <p>
+                        You can find me on <a href="https://www.kaggle.com/efrenjimnez">Kaggle</a>, 
+                        <a href="https://github.com/Efrenjm">GitHub</a> and <a href="https://www.linkedin.com/in/efren-jimenez/">LinkedIn</a>.
+                    </p>
+                <p>Click on the following image</p>
+                <img class="small" id="smart_thumbnail" src="https://img.freepik.com/free-photo/leaf-nature-backgrounds-pattern-illustration-plant-backdrop-design-abstract-vibrant-green-nature-wallpaper-illustration-generative-ai_188544-12680.jpg?w=1380&t=st=1693264891~exp=1693265491~hmac=56d2a3f3c56a1f144682206f64aaa2ad042f52fb59be2310e0581b72111ea8a3" alt="big image">
         </article>
-        <aside>
-            <p>placeholder to add comment thread later</p>
+        <aside id="asideContainer">
+            <!-- <p>placeholder to add comment thread later</p> -->
+            <div id="disqus_thread"></div>
+            <script>
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://holb-3.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <!-- <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> -->
         </aside>
     </main>
     <footer>
         <p>
+            <div id="disqus_thread"></div>
             Made by Efrén Alejandro Jiménez Mukul for <a href="https://apply.holbertonschool.com" target="_blank">Holberton School</a>.
         </p>
+        
     </footer>
 </body>
 </html>
